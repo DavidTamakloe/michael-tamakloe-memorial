@@ -1,0 +1,15 @@
+.tribute-item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    .date-text {
+        font-weight: bold;
+        font-size: 12px;
+        color: #888;
+        text-transform: uppercase;
+    }
+    .name-text {
+        font-size: 12px;
+        color: #555;
+    }
+}
