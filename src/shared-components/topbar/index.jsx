@@ -16,6 +16,9 @@ const TopbarComponent = ({ active }) => {
                         <Link to="/tributes">Tributes</Link>
                     </li>
                     <li>
+                        <Link to="/guest-book">Guestbook</Link>
+                    </li>
+                    <li>
                         <Link to="/gallery">Gallery</Link>
                     </li>
                     <li>
@@ -24,7 +27,7 @@ const TopbarComponent = ({ active }) => {
                 </ul>
             </div>
             <div id="mobile-topbar-fixed" className="d-md-none">
-                <p className="menu-header">{active}</p>
+                <p className="menu-header">{active.split("-").join(" ")}</p>
                 <span
                     className="toggle-menu-icon"
                     onClick={() => {
@@ -41,6 +44,9 @@ const TopbarComponent = ({ active }) => {
                             </li>
                             <li>
                                 <Link to="/tributes">Tributes</Link>
+                            </li>
+                            <li>
+                                <Link to="/guest-book">Guestbook</Link>
                             </li>
                             <li>
                                 <Link to="/gallery">Gallery</Link>

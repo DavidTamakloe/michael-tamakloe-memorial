@@ -6,6 +6,7 @@ import AnnouncementsPage from "./pages/announcements";
 import BiographyPage from "./pages/biography";
 import GalleryPage from "./pages/gallery";
 import TributesPage from "./pages/tributes";
+import GuestBookPage from "./pages/guest-book";
 
 export default function BasicExample() {
     return (
@@ -25,6 +26,9 @@ export default function BasicExample() {
                 </Route>
                 <Route path="/announcements">
                     <AnnouncementsPage />
+                </Route>
+                <Route path="/guest-book">
+                    <GuestBookPage />
                 </Route>
             </Switch>
         </Router>
