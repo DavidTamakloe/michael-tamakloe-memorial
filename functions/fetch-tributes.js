@@ -20,6 +20,6 @@ exports.handler = async (event) => {
     const response = await fetch(url, opts);
     return {
         statusCode: 200,
-        body: JSON.stringify(response.data),
+        body: JSON.stringify(response),
     };
 };
