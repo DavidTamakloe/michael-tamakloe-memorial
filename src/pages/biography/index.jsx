@@ -11,7 +11,7 @@ const BiographyPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-5">
-                            <h3 className="page-heading">BIOGRAPHY</h3>
+                            <h4 className="page-heading">BIOGRAPHY</h4>
                             <br />
                         </div>
                         <div className="col-md-7">

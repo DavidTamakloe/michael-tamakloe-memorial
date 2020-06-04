@@ -16,13 +16,14 @@ const GuestbookComponent = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-5">
-                            <h3>GUEST BOOK</h3>
+                            <h4>GUEST BOOK</h4>
+                            <p>To add a tribute please fill in the form. Your tribute will be displayed on the "Tributes" page.</p>
                             <br />
                         </div>
                         <div className="col-md-7">
                             <form>
                                 <div className="form-group">
-                                    <label>Name</label>
+                                    <label>Your Name</label>
                                     <input
                                         className="form-control"
                                         value={name}
@@ -33,7 +34,7 @@ const GuestbookComponent = () => {
                                     ></input>
                                 </div>
                                 <div className="form-group">
-                                    <label>Relation</label>
+                                    <label>Your Relation To Michael</label>
                                     <input
                                         className="form-control"
                                         value={relation}
@@ -55,7 +56,7 @@ const GuestbookComponent = () => {
                                     ></input>
                                 </div>
                                 <div className="form-group">
-                                    <label>Tribute</label>
+                                    <label>Your Tribute</label>
                                     <textarea
                                         className="form-control"
                                         rows="10"

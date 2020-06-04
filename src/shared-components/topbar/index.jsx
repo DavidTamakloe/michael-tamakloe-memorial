@@ -9,33 +9,32 @@ const TopbarComponent = ({ active }) => {
         <>
             <div id="topbar-fixed" className="d-none d-md-block">
                 <ul>
-                    <li>
+                    <li className={active === "biography" ? "active" : ""}>
                         <Link to="/biography">Biography</Link>
                     </li>
-                    <li>
+                    <li className={active === "tributes" ? "active" : ""}>
                         <Link to="/tributes">Tributes</Link>
                     </li>
-                    <li>
+                    <li className={active === "guest-book" ? "active" : ""}>
                         <Link to="/guest-book">Guestbook</Link>
                     </li>
-                    <li>
+                    <li className={active === "gallery" ? "active" : ""}>
                         <Link to="/gallery">Gallery</Link>
                     </li>
-                    <li>
+                    <li className={active === "announcements" ? "active" : ""}>
                         <Link to="/announcements">Announcements</Link>
                     </li>
                 </ul>
             </div>
-            <div id="mobile-topbar-fixed" className="d-md-none">
+            <div
+                id="mobile-topbar-fixed"
+                className="d-md-none"
+                onClick={() => {
+                    setExpanded(!expanded);
+                }}
+            >
                 <p className="menu-header">{active.split("-").join(" ")}</p>
-                <span
-                    className="toggle-menu-icon"
-                    onClick={() => {
-                        setExpanded(!expanded);
-                    }}
-                >
-                    {expanded ? <icon className="icon-close"></icon> : <icon className="icon-menu"></icon>}
-                </span>
+                <span className="toggle-menu-icon">{expanded ? <icon className="icon-close"></icon> : <icon className="icon-menu"></icon>}</span>
                 {expanded && (
                     <div className="menu-div">
                         <ul>

@@ -22,6 +22,7 @@ const GalleryPage = () => {
         <div>
             <Topbar active="gallery" />
             <div className="main-content">
+                <div style={{ height: 50 }}></div>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">

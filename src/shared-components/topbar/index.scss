@@ -7,7 +7,7 @@
     width: 100%;
     text-align: center;
     z-index: 3000;
-    line-height: 3;
+    line-height: 4;
 
     ul {
         margin-left: 0;
@@ -15,9 +15,13 @@
         display: inline-block;
         list-style: none;
         li {
+            padding-left: 10px;
+            padding-right: 10px;
             float: left;
             margin-left: 20px;
             font-weight: bold;
+            font-size: 13px;
+            text-transform: uppercase;
             a {
                 text-decoration: none;
                 color: black;
@@ -31,6 +35,15 @@
         }
         li:nth-child(1) {
             margin-left: 0;
+        }
+        li.active {
+            background: black;
+
+            a {
+                // text-decoration: underline;
+                color: white;
+            }
+            // border-bottom: 3px solid green;
         }
     }
 }
