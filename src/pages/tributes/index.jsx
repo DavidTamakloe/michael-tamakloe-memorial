@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { Topbar, BannerImage, Footer } from "../../shared-components";
 import TributeItem from "./tribute-item";
 
 const TributesPage = () => {
+    // const [tributes, setTributes] = useState([])
+    useEffect(() => {
+        fetch(`/.netlify/functions/fetch-tributes`).then((response) => {
+            console.log("response of fetch tributes");
+            console.log(response);
+            // setTributes(response)
+        });
+    }, []);
     return (
         <div>
             <Topbar active="tributes" />
