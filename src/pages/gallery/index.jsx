@@ -1,21 +1,38 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Topbar, Footer } from "../../shared-components";
 import ImageGallery from "react-image-gallery";
+import mike1 from "../../assets/images/mike_1.jpeg";
+import mike2 from "../../assets/images/mike_2.jpeg";
+import mike3 from "../../assets/images/mike_3.jpeg";
+import mike4 from "../../assets/images/mike_4.jpeg";
+import mike5 from "../../assets/images/mike_5.jpeg";
+import mike6 from "../../assets/images/mike_6.jpeg";
 
 const GalleryPage = () => {
     const images = [
         {
-            original: "https://picsum.photos/id/1018/1000/600/",
-            thumbnail: "https://picsum.photos/id/1018/250/150/",
+            original: mike1,
+            thumbnail: mike1,
         },
         {
-            original: "https://picsum.photos/id/1015/1000/600/",
-            thumbnail: "https://picsum.photos/id/1015/250/150/",
+            original: mike2,
+            thumbnail: mike2,
         },
         {
-            original: "https://picsum.photos/id/1019/1000/600/",
-            thumbnail: "https://picsum.photos/id/1019/250/150/",
+            original: mike3,
+            thumbnail: mike3,
+        },
+        {
+            original: mike4,
+            thumbnail: mike4,
+        },
+        {
+            original: mike5,
+            thumbnail: mike5,
+        },
+        {
+            original: mike6,
+            thumbnail: mike6,
         },
     ];
     return (
@@ -35,7 +52,5 @@ const GalleryPage = () => {
         </div>
     );
 };
-
-GalleryPage.propTypes = {};
 
 export default GalleryPage;

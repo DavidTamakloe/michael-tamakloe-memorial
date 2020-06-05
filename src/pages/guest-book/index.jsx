@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 import { Topbar, BannerImage, Footer } from "../../shared-components";
 import { withRouter } from "react-router-dom";
 import axios from "axios";
@@ -9,10 +8,11 @@ const GuestbookComponent = ({ history }) => {
     const [relation, setRelation] = useState();
     const [content, setContent] = useState();
     const [contact, setContact] = useState();
+    const [loading, setLoading] = useState(false);
 
     const onSubmit = (e) => {
-        console.log("submitting");
         e.preventDefault();
+        setLoading(true);
         axios
             .post("/.netlify/functions/create-tribute", {
                 name,
@@ -21,6 +21,7 @@ const GuestbookComponent = ({ history }) => {
                 contact,
             })
             .then((response) => {
+                setLoading(false);
                 if (response.status === 200) {
                     history.push("/tributes");
                 }
@@ -86,7 +87,7 @@ const GuestbookComponent = ({ history }) => {
                                     ></textarea>
                                     <br />
                                 </div>
-                                <button type="submit" className="btn btn-dark btn-block">
+                                <button type="submit" className="btn btn-dark btn-block" disabled={loading ? true : false}>
                                     SUBMIT TRIBUTE
                                 </button>
                             </form>
@@ -98,7 +99,5 @@ const GuestbookComponent = ({ history }) => {
         </div>
     );
 };
-
-GuestbookComponent.propTypes = {};
 
 export default withRouter(GuestbookComponent);

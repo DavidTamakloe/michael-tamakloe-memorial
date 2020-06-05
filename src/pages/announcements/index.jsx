@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Topbar, BannerImage, Footer } from "../../shared-components";
 
 const AnnouncementsPage = () => {
@@ -33,7 +32,5 @@ const AnnouncementsPage = () => {
         </div>
     );
 };
-
-AnnouncementsPage.propTypes = {};
 
 export default AnnouncementsPage;

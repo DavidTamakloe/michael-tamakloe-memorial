@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import PropTypes from "prop-types";
 import { Topbar, BannerImage, Footer } from "../../shared-components";
 import TributeItem from "./tribute-item";
 import axios from "axios";
@@ -44,7 +43,5 @@ const TributesPage = () => {
         </div>
     );
 };
-
-TributesPage.propTypes = {};
 
 export default TributesPage;

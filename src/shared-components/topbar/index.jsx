@@ -1,6 +1,5 @@
 import "./index.scss";
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const TopbarComponent = ({ active }) => {
@@ -34,7 +33,7 @@ const TopbarComponent = ({ active }) => {
                 }}
             >
                 <p className="menu-header">{active.split("-").join(" ")}</p>
-                <span className="toggle-menu-icon">{expanded ? <icon className="icon-close"></icon> : <icon className="icon-menu"></icon>}</span>
+                <span className="toggle-menu-icon">{expanded ? <i className="icon-close"></i> : <i className="icon-menu"></i>}</span>
                 {expanded && (
                     <div className="menu-div">
                         <ul>
@@ -59,10 +58,6 @@ const TopbarComponent = ({ active }) => {
             </div>
         </>
     );
-};
-
-TopbarComponent.propTypes = {
-    active: PropTypes.string,
 };
 
 export const Topbar = TopbarComponent;

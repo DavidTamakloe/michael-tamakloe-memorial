@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Topbar, BannerImage, Footer } from "../../shared-components";
 
 const BiographyPage = () => {
@@ -63,7 +62,5 @@ const BiographyPage = () => {
         </div>
     );
 };
-
-BiographyPage.propTypes = {};
 
 export default BiographyPage;

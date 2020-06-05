@@ -1,6 +1,5 @@
 import "./tribute-item.scss";
 import React from "react";
-import PropTypes from "prop-types";
 
 const TributeItemComponent = ({ date, content, name }) => {
     return (
@@ -11,7 +10,5 @@ const TributeItemComponent = ({ date, content, name }) => {
         </div>
     );
 };
-
-TributeItemComponent.propTypes = {};
 
 export default TributeItemComponent;

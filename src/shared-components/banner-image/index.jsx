@@ -1,6 +1,5 @@
 import "./index.scss";
 import React from "react";
-import PropTypes from "prop-types";
 import bannerImage from "../../assets/images/banner_image.png";
 
 const BannerImageComponent = () => {
@@ -10,7 +9,5 @@ const BannerImageComponent = () => {
         </div>
     );
 };
-
-BannerImageComponent.propTypes = {};
 
 export const BannerImage = BannerImageComponent;

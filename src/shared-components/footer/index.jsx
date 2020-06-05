@@ -1,6 +1,5 @@
 import "./index.scss";
 import React from "react";
-import PropTypes from "prop-types";
 
 const FooterComponent = () => {
     return (
@@ -33,7 +32,5 @@ const FooterComponent = () => {
         </div>
     );
 };
-
-FooterComponent.propTypes = {};
 
 export const Footer = FooterComponent;
