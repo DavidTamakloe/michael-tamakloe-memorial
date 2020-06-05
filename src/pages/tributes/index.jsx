@@ -1,16 +1,19 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { Topbar, BannerImage, Footer } from "../../shared-components";
 import TributeItem from "./tribute-item";
+import axios from "axios";
+import moment from "moment";
 
 const TributesPage = () => {
-    // const [tributes, setTributes] = useState([])
+    const [tributes, setTributes] = useState([]);
     useEffect(() => {
-        fetch(`/.netlify/functions/fetch-tributes`).then((response) => {
-            console.log("response of fetch tributes");
-            console.log(response);
-            // setTributes(response)
-        });
+        async function fetchTributes() {
+            const response = await axios.get(".netlify/functions/fetch-tributes");
+            console.log(response.data);
+            setTributes(response.data.allTributes.data);
+        }
+        fetchTributes();
     }, []);
     return (
         <div>
@@ -23,30 +26,16 @@ const TributesPage = () => {
                             <h4>TRIBUTES</h4>
                         </div>
                         <div className="col-md-7">
-                            <TributeItem
-                                date={"12 May 2020"}
-                                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis augue vitae leo rhoncus, ac ultrices augue
-                            consequat. Mauris mauris purus."
-                                name="Person 1 (Classmate)"
-                            />
-                            <TributeItem
-                                date={"12 May 2020"}
-                                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis augue vitae leo rhoncus, ac ultrices augue
-                            consequat. Mauris mauris purus."
-                                name="Person 1 (Classmate)"
-                            />
-                            <TributeItem
-                                date={"12 May 2020"}
-                                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis augue vitae leo rhoncus, ac ultrices augue
-                            consequat. Mauris mauris purus."
-                                name="Person 1 (Classmate)"
-                            />
-                            <TributeItem
-                                date={"12 May 2020"}
-                                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis augue vitae leo rhoncus, ac ultrices augue
-                            consequat. Mauris mauris purus."
-                                name="Person 1 (Classmate)"
-                            />
+                            {tributes.map((tribute) => {
+                                return (
+                                    <TributeItem
+                                        key={tribute._id}
+                                        date={moment(tribute.date).format("DD MMM YYYY")}
+                                        content={tribute.content}
+                                        name={`${tribute.name} (${tribute.relation})`}
+                                    />
+                                );
+                            })}
                         </div>
                     </div>
                 </div>

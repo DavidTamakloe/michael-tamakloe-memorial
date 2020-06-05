@@ -1,12 +1,31 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Topbar, BannerImage, Footer } from "../../shared-components";
+import { withRouter } from "react-router-dom";
+import axios from "axios";
 
-const GuestbookComponent = () => {
+const GuestbookComponent = ({ history }) => {
     const [name, setName] = useState();
     const [relation, setRelation] = useState();
     const [content, setContent] = useState();
     const [contact, setContact] = useState();
+
+    const onSubmit = (e) => {
+        console.log("submitting");
+        e.preventDefault();
+        axios
+            .post("/.netlify/functions/create-tribute", {
+                name,
+                relation,
+                content,
+                contact,
+            })
+            .then((response) => {
+                if (response.status === 200) {
+                    history.push("/tributes");
+                }
+            });
+    };
 
     return (
         <div>
@@ -21,7 +40,7 @@ const GuestbookComponent = () => {
                             <br />
                         </div>
                         <div className="col-md-7">
-                            <form>
+                            <form onSubmit={onSubmit}>
                                 <div className="form-group">
                                     <label>Your Name</label>
                                     <input
@@ -67,7 +86,7 @@ const GuestbookComponent = () => {
                                     ></textarea>
                                     <br />
                                 </div>
-                                <button type="button" class="btn btn-dark btn-block">
+                                <button type="submit" className="btn btn-dark btn-block">
                                     SUBMIT TRIBUTE
                                 </button>
                             </form>
@@ -82,4 +101,4 @@ const GuestbookComponent = () => {
 
 GuestbookComponent.propTypes = {};
 
-export default GuestbookComponent;
+export default withRouter(GuestbookComponent);
