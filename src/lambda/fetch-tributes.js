@@ -9,6 +9,7 @@ exports.handler = async (event, context, callback) => {
                     name
                     relation
                     content
+                    date
                     _id
                 }
             }

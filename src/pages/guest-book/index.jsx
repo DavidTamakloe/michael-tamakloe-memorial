@@ -69,7 +69,6 @@ const GuestbookComponent = ({ history }) => {
                                     <input
                                         className="form-control"
                                         value={contact}
-                                        required
                                         onChange={(e) => {
                                             setContact(e.target.value);
                                         }}

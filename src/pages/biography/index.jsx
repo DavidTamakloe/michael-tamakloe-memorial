@@ -15,44 +15,71 @@ const BiographyPage = () => {
                         </div>
                         <div className="col-md-7">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean iaculis augue vitae leo rhoncus, ac ultrices augue
-                                consequat. Mauris mauris purus, scelerisque in orci at, fringilla volutpat libero. Quisque ante nibh, interdum quis
-                                fringilla quis, rutrum ac nisi. Etiam sit amet hendrerit mi. Vestibulum ante ipsum primis in faucibus orci luctus et
-                                ultrices posuere cubilia curae; Pellentesque eu felis dui. Duis eu metus convallis, iaculis nulla vel, dapibus diam.
-                                Vestibulum rhoncus pretium sollicitudin. Suspendisse mattis enim nec urna maximus commodo. Ut non posuere justo. In
-                                hac habitasse platea dictumst.
+                                <span style={{ fontSize: 13 }}>
+                                    “Let not your heart be troubled; you believe in God, believe also in Me. In My Father’s house there are many
+                                    mansions; if it were not so, I would have told you. I go to prepare a place for you. And if I go and prepare a
+                                    place for you, I will come again and receive you to Myself; that where I am, there you may be also.” <br />
+                                    JOHN 14:1 – 3
+                                </span>
                                 <br />
                                 <br />
-                                Maecenas porttitor eget lorem non lacinia. Nulla accumsan nisi eget tempus iaculis. Sed nec congue erat, vitae
-                                imperdiet lacus. Nulla viverra facilisis auctor. In libero justo, aliquet nec ex at, luctus sollicitudin augue. Sed
-                                nunc risus, auctor mollis eros et, interdum scelerisque justo. Quisque tortor dolor, tempus quis urna non, scelerisque
-                                scelerisque metus. Quisque fringilla ac ligula ac vehicula. Duis eu purus vel nunc ornare tristique non a mauris.
-                                Praesent fringilla ex augue, sit amet pretium risus pulvinar at. Sed molestie nunc cursus metus dapibus malesuada.
-                                Morbi in ligula at magna ultrices faucibus. Praesent posuere consectetur euismod. Duis dui justo, semper sit amet
-                                gravida quis, facilisis a urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                                egestas.
+                                Michael Tamakloe was born in Odumase Krobo on 18 th July 1968 to Mr. Edwin Kofi Tamakloe, a Road and Building
+                                contractor and Madam Emily Laako Bah Tamakloe, a general trader, both of blessed memory. He was baptized into the
+                                Presbyterian Church.
                                 <br />
                                 <br />
-                                Sed sapien lorem, dapibus in cursus eu, commodo id felis. In luctus, enim sit amet tempor egestas, sapien tortor
-                                consequat dui, non bibendum turpis leo sit amet quam. Vestibulum finibus tempus dui in tincidunt. Sed eget ullamcorper
-                                ante, quis placerat ante. Suspendisse libero lectus, luctus sit amet risus vitae, dictum vulputate diam.
+                                Michael, also called Kordza, grew up in both Odumase Krobo and Accra and therefore had his childhood education in both
+                                places, Presbyterian Primary School in Odumase Krobo, popularly known as ‘Labour’, and Datus Preparatory School,
+                                Dansoman where he sat the Common Entrance Examination and passed. Michael was enrolled for a short time at the Ecole
+                                Jean Jacque Rosseau, a French school in Accra New Town where he quickly picked up French speaking. He enrolled in
+                                Presec Boys Secondary School, Legon in September 1981 and obtained his ‘O’ Level and ‘A’ Level Certificates in 1986
+                                and 1988 respectively. In September 1990, Michael gained admission to the University of Science and Technology (UST),
+                                now Kwame Nkrumah University of Science and Technology (KNUST), to read French, English and Law, and graduated in 1994
+                                with a Bachelor of Arts Degree in English and Law.
                                 <br />
                                 <br />
-                                Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut tortor leo, consectetur et
-                                eros a, pharetra vestibulum orci. Sed consectetur felis lectus. Sed pretium dignissim pellentesque. Cras ut risus
-                                porttitor, fermentum diam sit amet, vestibulum massa. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                Michael’s working life began at Ceramica Tamakloe where he joined his big brother’s company for a while. He ventured
+                                out on his own making concrete pavement blocks and ultimately became a contractor, supervising various civil works,
+                                and gaining other contracts and running projects, some of which took him on business trips outside Ghana. Mike had his
+                                ups and downs in business but pressed on for the ultimate. In his last years, he developed interest in quarry mining
+                                but unfortunately was not able to see that through to the end.
                                 <br />
                                 <br />
-                                Aliquam imperdiet mi eros, sed dignissim libero ornare vitae. Duis sit amet lobortis nulla, vel ultrices justo. Nunc
-                                maximus porttitor ipsum sit amet feugiat. Donec venenatis justo eros, vel lobortis lacus dignissim vel. Pellentesque
-                                vitae risus leo. Maecenas vitae vestibulum nisi. Aliquam scelerisque vitae est ut vehicula. Fusce iaculis justo
-                                tellus, nec pellentesque sapien blandit eu. Aliquam nec massa semper mauris finibus viverra. Proin id pulvinar justo.
+                                A very affable person and the soul of every gathering. Mike had a great relationship with all his siblings, both on
+                                his mother side and his father side, the larger family, his 2 cousins, and all his nephews and nieces. His presence
+                                was always felt during family events. His leadership qualities were evident as early as his school days in Presec
+                                where he became one of the three Dining Hall prefects; he even ventured into sports and music in school. Michael had a
+                                lot of charisma and knew how to make and keep friends.
                                 <br />
                                 <br />
-                                Sed faucibus sapien tortor, in posuere neque placerat a. Nullam eleifend odio ut velit accumsan, et gravida orci
-                                elementum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas eget
-                                luctus arcu. Cras eu sem ac ex tincidunt iaculis vel et mauris. Mauris pretium diam eget sem auctor, quis dignissim
-                                augue tincidunt. In tincidunt mattis augue vel ullamcorper. Suspendisse sed massa arcu. Nunc vitae vestibulum nibh.
+                                Mike was a member of the International Central Gospel Church (ICGC), Holy Ghost Temple, Frafraha, where his
+                                relationship with the Lord Jesus Christ grew and deepened. His faith was very infectious and evident in all his
+                                utterances; Christ became the foremost in all he did. Mike never hesitated to share his faith or encourage prayer in
+                                every situation.
+                                <br />
+                                <br />
+                                Michael, his dear wife of eighteen years, Joyce, and their beloved son Selasie, blessed many people with love, who
+                                visited their home. We started becoming aware of a pain in Michael’s right leg in January 2020. Within a matter of
+                                months Mike’s health deteriorated until his passing on 27 th May 2020. Michael will be remembered for his friendly and
+                                charismatic presence and his unshakeable faith in Jesus Christ. We believe that he has gone to be with his Maker. He
+                                is mourned by his wife Joyce, his son Selasie, his siblings, wider family and a host of friends.
+                                <br />
+                                <br />
+                                Michael, Hede Nyuie,
+                                <br />
+                                <br />
+                                Oke Huom Saminya,
+                                <br />
+                                <br />
+                                Yaa wor odjogban,
+                                <br />
+                                <br />
+                                Repose en paix,
+                                <br />
+                                <br />
+                                Rest in perfect peace,
+                                <br />
+                                Till we meet again.
                             </p>
                         </div>
                     </div>

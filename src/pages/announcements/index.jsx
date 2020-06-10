@@ -15,14 +15,17 @@ const AnnouncementsPage = () => {
                         </div>
                         <div className="col-md-7">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                PRIVATE BURIAL
                                 <br />
                                 <br />
-                                Aenean iaculis augue vitae leo rhoncus, ac ultrices augue consequat. Mauris mauris purus, scelerisque in orci at,
-                                fringilla volutpat libero.
+                                DATE: FRIDAY 19TH JUNE, 2020
+                                <br />
+                                TIME: 10:00AM – 11:30AM GMT
+                                <br />
+                                VENUE: TRANSITIONS FUNERAL HOME – HAATSO
                                 <br />
                                 <br />
-                                Quisque ante nibh, interdum quis
+                                LIVE STREAMING WILL BE PROVIDED BY TRANSITIONS FUNERAL HOME
                             </p>
                         </div>
                     </div>

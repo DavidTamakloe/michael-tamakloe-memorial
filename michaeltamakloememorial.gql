@@ -1,0 +1,11 @@
+type Tribute @collection(name: "tributes") {
+    name: String!
+    relation: String!
+    contact: String!
+    content: String!
+    date: String!
+}
+
+type Query {
+    allTributes: [Tribute!]! @index(name: "all_tributes")
+}

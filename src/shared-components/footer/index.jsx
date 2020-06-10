@@ -14,7 +14,7 @@ const FooterComponent = () => {
                         </p>
                         <br />
                     </div>
-                    <div className="col-md-6">
+                    {/* <div className="col-md-6">
                         <h6>CONTACT</h6>
                         <p>
                             Person 1 : +233 244 111 111
@@ -26,7 +26,7 @@ const FooterComponent = () => {
                             Person 4 : +233 244 444 444
                             <br />
                         </p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
