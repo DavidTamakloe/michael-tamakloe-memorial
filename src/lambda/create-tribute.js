@@ -14,7 +14,7 @@ mutation {
             name: "${body.name}"
             relation: "${body.relation}"
             contact: "${body.contact}"
-            content: "${body.content}"
+            content: """${body.content}"""
             date: "${date}"
         }
     ) 

@@ -5,7 +5,9 @@ const TributeItemComponent = ({ date, content, name }) => {
     return (
         <div className="tribute-item">
             <p className="date-text">{date}</p>
-            <p className="content-text">{content}</p>
+            <p className="content-text" style={{ whiteSpace: "pre-wrap" }}>
+                {content}
+            </p>
             <p className="name-text">{name}</p>
         </div>
     );
