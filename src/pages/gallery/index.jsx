@@ -25,6 +25,7 @@ import mike21 from "../../assets/images/mike_21.jpeg";
 import mike22 from "../../assets/images/mike_22.jpeg";
 import mike23 from "../../assets/images/mike_23.jpeg";
 import mike24 from "../../assets/images/mike_24.jpeg";
+import mike25 from "../../assets/images/mike_25.jpeg";
 
 const GalleryPage = () => {
     const images = [
@@ -43,6 +44,10 @@ const GalleryPage = () => {
         {
             original: mike4,
             thumbnail: mike4,
+        },
+        {
+            original: mike25,
+            thumbnail: mike25,
         },
         {
             original: mike5,

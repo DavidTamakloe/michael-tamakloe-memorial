@@ -46,10 +46,10 @@ const BiographyPage = () => {
                                 <br />
                                 <br />
                                 A very affable person and the soul of every gathering. Mike had a great relationship with all his siblings, both on
-                                his mother side and his father side, the larger family, his 2 cousins, and all his nephews and nieces. His presence
-                                was always felt during family events. His leadership qualities were evident as early as his school days in Presec
-                                where he became one of the three Dining Hall prefects; he even ventured into sports and music in school. Michael had a
-                                lot of charisma and knew how to make and keep friends.
+                                his mother side and his father side, the larger family, his cousins, and all his nephews and nieces. His presence was
+                                always felt during family events. His leadership qualities were evident as early as his school days in Presec where he
+                                became one of the three Dining Hall prefects; he even ventured into sports and music in school. Michael had a lot of
+                                charisma and knew how to make and keep friends.
                                 <br />
                                 <br />
                                 Mike was a member of the International Central Gospel Church (ICGC), Holy Ghost Temple, Frafraha, where his
