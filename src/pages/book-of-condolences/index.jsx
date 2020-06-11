@@ -30,13 +30,13 @@ const GuestbookComponent = ({ history }) => {
 
     return (
         <div>
-            <Topbar active="guest-book" />
+            <Topbar active="book-of-condolences" />
             <BannerImage />
             <div className="main-content">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-5">
-                            <h4>GUEST BOOK</h4>
+                            <h4>BOOK OF CONDOLENCES</h4>
                             <p>To add a tribute please fill in the form. Your tribute will be displayed on the "Tributes" page.</p>
                             <br />
                         </div>

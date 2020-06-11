@@ -3,6 +3,7 @@ import { Topbar, BannerImage, Footer } from "../../shared-components";
 import TributeItem from "./tribute-item";
 import axios from "axios";
 import moment from "moment";
+import { Link } from "react-router-dom";
 
 const TributesPage = () => {
     const [tributes, setTributes] = useState([]);
@@ -23,6 +24,9 @@ const TributesPage = () => {
                     <div className="row">
                         <div className="col-md-5">
                             <h4>TRIBUTES</h4>
+                            <p>
+                                To add a tribute, please go to the <Link to="/book-of-condolences">Book of Condolences Page</Link>.
+                            </p>
                         </div>
                         <div className="col-md-7">
                             {tributes.map((tribute) => {

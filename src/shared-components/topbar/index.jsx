@@ -14,8 +14,8 @@ const TopbarComponent = ({ active }) => {
                     <li className={active === "tributes" ? "active" : ""}>
                         <Link to="/tributes">Tributes</Link>
                     </li>
-                    <li className={active === "guest-book" ? "active" : ""}>
-                        <Link to="/guest-book">Guestbook</Link>
+                    <li className={active === "book-of-condolences" ? "active" : ""}>
+                        <Link to="/book-of-condolences">Book of Condolences</Link>
                     </li>
                     <li className={active === "gallery" ? "active" : ""}>
                         <Link to="/gallery">Gallery</Link>
@@ -44,7 +44,7 @@ const TopbarComponent = ({ active }) => {
                                 <Link to="/tributes">Tributes</Link>
                             </li>
                             <li>
-                                <Link to="/guest-book">Guestbook</Link>
+                                <Link to="/book-of-condolences">Book of Condolences</Link>
                             </li>
                             <li>
                                 <Link to="/gallery">Gallery</Link>
